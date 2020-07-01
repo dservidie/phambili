@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+
+  proyecto-albahaca-be:
+    image: ${ECR_NAME}/${ECR_IMAGE_NAME}:${BRANCH}-latest
+    restart: always
+    ports:
+      - ${PORT}:8080
